@@ -1,32 +1,18 @@
 package javapro;
 
-public class App{  
-public static void main(String args[]){  
-//creating a matrix  
-int original[][]={{1,3,4},{2,4,3},{3,4,5}};    
-    
-//creating another matrix to store transpose of a matrix  
-int transpose[][]=new int[3][3];  //3 rows and 3 columns  
-    
-//Code to transpose a matrix  
-for(int i=0;i<3;i++){    
-for(int j=0;j<3;j++){    
-transpose[i][j]=original[j][i];  
-}    
-}    
-  
-System.out.println("Printing Matrix without transpose:");  
-for(int i=0;i<3;i++){    
-for(int j=0;j<3;j++){    
-System.out.print(original[i][j]+" ");    
-}    
-System.out.println();//new line    
-}    
-System.out.println("Printing Matrix After Transpose:");  
-for(int i=0;i<3;i++){    
-for(int j=0;j<3;j++){    
-System.out.print(transpose[i][j]+" ");    
-}    
-System.out.println();//new line    
-}    
-}}
+public class App    
+{    
+    public static void main(String[] args) {    
+        String string = "The best of both worlds";    
+        int count = 0;    
+            
+        //Counts each character except space    
+        for(int i = 0; i < string.length(); i++) {    
+            if(string.charAt(i) != ' ')    
+                count++;    
+        }    
+            
+        //Displays the total number of characters present in the given string    
+        System.out.println("Total number of characters in a string: " + count);    
+    }    
+} 
